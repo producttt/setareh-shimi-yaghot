@@ -82,7 +82,16 @@ let product = [
     نرم کننده لباس<br>
     مناسب برای : استفاده خانگی _ هتل ها _بیمارستان ها_ خشکشویی ها و...`
     ,id:5
-    }
+    },
+    {name:"پودر معجزه",
+ img:'15.png',tozih:`مناسب برای : استفاده خانگی _ هتل ها _بیمارستان ها_ خشکشویی ها و...`,
+tozihmore:`وزن :500g
+رنگ : سفید<br>
+بسیار مقرون بصرفه<br>
+چربی سوز سطوح <br>
+مناسب برای : استفاده خانگی _ هتل ها_ بیمارستان ها_ شرکت های نظافتی و...`
+,id:6
+}
     
     ]
 let card = document.querySelector(".row")
@@ -186,6 +195,24 @@ price.innerHTML = " 90,000 تومان"
          
          
                         }
+                        if(end == 6){
+             if(all.value == 10){
+        price.innerHTML = "  30,000  تومان "
+                                                        }
+  if(all.value == 20){
+        price.innerHTML = "27,000 تومان "
+                                                          }
+if(all.value == 30){
+        price.innerHTML =  "25,000 تومان"
+                                                        
+                                                          }
+        if(all.value == 40){
+        price.innerHTML = " 23,000 تومان"
+                                                          }
+            if(all.value == ""){
+                    price.innerHTML =""
+                                                          }
+                        }
           
 
         
@@ -196,7 +223,14 @@ price.innerHTML = " 90,000 تومان"
         option[1].innerHTML="20تا 50 گونی"
         option[2].innerHTML= "51تا 100 گونی"
         option[3].innerHTML= '101 تا 250 گونی'
-        option[4].innerHTML= '101 تا 250 گونی'
+        option[4].innerHTML= '1000 تا 251 گونی'
+    }
+    
+    if(end == '6'){
+        option[1].innerHTML="20تا 50 بسته"
+        option[2].innerHTML= "51تا 100 بسته"
+        option[3].innerHTML= '101 تا 250 بسته'
+        option[4].innerHTML= '1000 تا 250 بسته'
     }
     
     function buy(){
